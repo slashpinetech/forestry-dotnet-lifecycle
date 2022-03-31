@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>SlashPineTech.Forestry.Lifecycle</AssemblyName>
+    <Title>Forestry Lifecycle Component</Title>
+    <Description>Provides your application with a way to execute actions at startup.</Description>
+    <Authors>Steven Benitez</Authors>
+    <Company>Slash Pine Tech</Company>
+    <PackageTags>ASP.NET Core</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>

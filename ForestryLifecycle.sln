@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlashPineTech.Forestry.Lifecycle", "src\SlashPineTech.Forestry.Lifecycle\SlashPineTech.Forestry.Lifecycle.csproj", "{D7A63EF6-7D38-47C1-BB65-D8336C846B9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlashPineTech.Forestry.Lifecycle.Tests", "tests\SlashPineTech.Forestry.Lifecycle.Tests\SlashPineTech.Forestry.Lifecycle.Tests.csproj", "{25EB6BF2-0031-4457-8846-A13770842690}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7A63EF6-7D38-47C1-BB65-D8336C846B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A63EF6-7D38-47C1-BB65-D8336C846B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A63EF6-7D38-47C1-BB65-D8336C846B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A63EF6-7D38-47C1-BB65-D8336C846B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25EB6BF2-0031-4457-8846-A13770842690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25EB6BF2-0031-4457-8846-A13770842690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25EB6BF2-0031-4457-8846-A13770842690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25EB6BF2-0031-4457-8846-A13770842690}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
