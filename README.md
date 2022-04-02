@@ -1,3 +1,5 @@
+[![MIT License](https://img.shields.io/github/license/slashpinetech/forestry-dotnet-lifecycle?color=1F3B2B&style=flat-square)](https://github.com/slashpinetech/forestry-dotnet-lifecycle/blob/main/LICENSE)
+
 # Forestry.NET -- Lifecycle
 
 Forestry .NET is a set of open-source libraries for building modern web
