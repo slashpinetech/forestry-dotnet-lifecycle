@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Logging;
-using Moq;
 using Shouldly;
 using Xunit;
 
@@ -246,14 +245,11 @@ public class OutputRoutesStartupActionTests
             }
         }, 1);
 
-        var descriptorCollectionProvider = new Mock<IActionDescriptorCollectionProvider>();
-        descriptorCollectionProvider
-            .Setup(provider => provider.ActionDescriptors)
-            .Returns(actionDescriptors);
+        var descriptorCollectionProvider = new MockActionDescriptorCollectionProvider(actionDescriptors);
 
         var logger = new MockLogger();
 
-        var action = new OutputRoutesStartupAction(descriptorCollectionProvider.Object, logger);
+        var action = new OutputRoutesStartupAction(descriptorCollectionProvider, logger);
         await action.OnStartupAsync(CancellationToken.None);
 
         var log = logger.BuildLog();
@@ -279,16 +275,9 @@ FOOBAR /no-route-source ()
     [Fact]
     public async Task OnStartupAsync_Logs_No_Routes()
     {
-        var actionDescriptors = new ActionDescriptorCollection(new List<ActionDescriptor>(), 1);
-
-        var descriptorCollectionProvider = new Mock<IActionDescriptorCollectionProvider>();
-        descriptorCollectionProvider
-            .Setup(provider => provider.ActionDescriptors)
-            .Returns(actionDescriptors);
-
         var logger = new MockLogger();
 
-        var action = new OutputRoutesStartupAction(descriptorCollectionProvider.Object, logger);
+        var action = new OutputRoutesStartupAction(new MockActionDescriptorCollectionProvider(), logger);
         await action.OnStartupAsync(CancellationToken.None);
 
         var log = logger.BuildLog();
